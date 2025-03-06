@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Año en Fotos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Año en Fotos</h1>
+    <p>Crea tu video resumen del año con tus recuerdos favoritos.</p>
+  </header>
+  <main>
+    <form id="photoForm">
+      <section class="photos-section">
+        <h2>Fotos del año</h2>
+        <div class="months-grid">
+          <div class="month">
+            <label for="foto-enero">Enero</label>
+            <input type="file" id="foto-enero" name="foto-enero" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-febrero">Febrero</label>
+            <input type="file" id="foto-febrero" name="foto-febrero" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-marzo">Marzo</label>
+            <input type="file" id="foto-marzo" name="foto-marzo" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-abril">Abril</label>
+            <input type="file" id="foto-abril" name="foto-abril" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-mayo">Mayo</label>
+            <input type="file" id="foto-mayo" name="foto-mayo" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-junio">Junio</label>
+            <input type="file" id="foto-junio" name="foto-junio" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-julio">Julio</label>
+            <input type="file" id="foto-julio" name="foto-julio" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-agosto">Agosto</label>
+            <input type="file" id="foto-agosto" name="foto-agosto" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-septiembre">Septiembre</label>
+            <input type="file" id="foto-septiembre" name="foto-septiembre" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-octubre">Octubre</label>
+            <input type="file" id="foto-octubre" name="foto-octubre" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-noviembre">Noviembre</label>
+            <input type="file" id="foto-noviembre" name="foto-noviembre" accept="image/*">
+          </div>
+          <div class="month">
+            <label for="foto-diciembre">Diciembre</label>
+            <input type="file" id="foto-diciembre" name="foto-diciembre" accept="image/*">
+          </div>
+        </div>
+      </section>
+
+      <section class="music-section">
+        <h2>Selección de Música</h2>
+        <div class="music-options">
+          <label>
+            <input type="radio" name="musicOption" value="default" checked>
+            Usar música de la página
+          </label>
+          <label>
+            <input type="radio" name="musicOption" value="custom">
+            Subir mi propia música
+          </label>
+        </div>
+        <div class="default-music">
+          <label for="select-music">Elige una pista:</label>
+          <select id="select-music" name="select-music">
+            <option value="pista1">Pista 1 - Melodía Suave</option>
+            <option value="pista2">Pista 2 - Ritmo Animado</option>
+            <option value="pista3">Pista 3 - Sonidos del Atardecer</option>
+          </select>
+        </div>
+        <div class="custom-music" style="display: none;">
+          <label for="upload-music">Sube tu archivo de música:</label>
+          <input type="file" id="upload-music" name="upload-music" accept="audio/*">
+        </div>
+      </section>
+      <button type="submit">Generar Video Resumen</button>
+    </form>
+    <div id="result" class="result"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mi Año en Fotos</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
